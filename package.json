@@ -1,0 +1,16 @@
+{
+  "name": "jscad-v3-splash-prototype",
+  "version": "0.0.1",
+  "description": "jscad-v3-splash-prototype",
+  "main": "src/swcad.js",
+  "scripts": {
+    "docs": "jsdoc src -r -d docs -c jsdoc.json --readme readme.md",
+    "serve": "http-server src"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jsdoc": "^4.0.4",
+    "http-server": "^14.1.1"
+  }
+}
