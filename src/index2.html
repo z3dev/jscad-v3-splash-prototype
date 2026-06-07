@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <meta name="keywords" content="jscad, openjscad, javascript, typescript, cad, svg, stl, obj, csg, 3mf, 3d-design, 2d-design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>JSCAD - Create 3D designs using Javascript</title>
+    <meta name="description" content="JSCAD is an open source set of modular, browser and command line tools for creating parametric 2D and 3D CAD designs with JavaScript code.">
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    >
+  </head>
+
+  <body>
+
+    <header class="container" style="max-height: 2em;">
+      <div class="grid" style="text-align: center;">
+        <a href="guide.html" class="contrast">Learn</a>
+        <a href="reference.html" class="contrast">Reference</a>
+        <a href="forum.html" class="contrast">Forum</a>
+        <a href="discord.html" class="contrast">Discord</a>
+<!--
+        <nav style="height: 100%; box-sizing: content-box;">
+          <ul style="height: 100%;">
+            <li style="height: 100%;">
+              <details class="dropdown" style="height: 100%;">
+                <summary role="button" class="secondary">Theme</summary>
+                <ul>
+                  <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                  <li><a href="#" data-theme-switcher="light">Light</a></li>
+                  <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+-->
+      </div>
+    </header>
+
+    <hr/>
+
+    <section class="container">
+      <section id="preview" class="container" style="text-align: center;">
+        <div>
+          <img src="logo.svg" style="width: 15%; height: 15%">
+        </div>
+        <h1>JSCAD</h1>
+        <h3>Create 3D designs using JavaScript</h3>
+        <p class="grid">
+          <button onclick="window.location.href='guide.html';">Learn JSCAD</button>
+          <button onclick="window.location.href='reference.html';" class="secondary">API Reference</button>
+        </p>
+      </section>
+    </section>
+
+    <hr/>
+
+    <section class="container">
+      <h2>Create 3D designs by writing simple code</h2>
+      <details>
+        <summary>Example of the JSCAD logo</summary>
+        <p>
+          Starts by creating a text file in the editor of your choice. Save it with a .js file extension,
+          and when you are ready, drag it onto the JSCAD modeling window.
+        </p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+      <details>
+        <summary>Reuse other JSCAD designs</summary>
+        <p>TBD ... add code and viewer</p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+    </section>
+
+    <hr/>
+
+    <section class="container">
+      <h2>Export designs for printing</h2>
+      <details>
+        <summary>Export STL meshes for simple 3D printing</summary>
+        <p>TBD ... add code and viewer</p>
+        <button class="secondary" onclick="window.location.href='https://openjscad.xyz';">Try it online</button>
+      </details>
+      <details>
+        <summary>Export 3MF packages for multi-color 3D printing</summary>
+        <p>TBD ... add code and viewer</p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+      <details>
+        <summary>Supported formats</summary>
+        <div class="overflow-auto">
+          <table class="striped">
+            <thead>
+              <tr>
+                <th scope="col">Format</th>
+                <th scope="col">Website</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AMF</td>
+                <td>Cell2</td>
+                <td>Additive Manufacturing format for 3D objects</td>
+              </tr>
+              <tr>
+                <td>DXF</td>
+                <td>Cell2</td>
+                <td>AutoCad Drawing Interchange format for 2D and 3D objects</td>
+              </tr>
+              <tr>
+                <td>JSON</td>
+                <td>Cell2</td>
+                <td>JSON (JavaScript Object Notation) is a lightweight data-interchange format</td>
+              </tr>
+              <tr>
+                <td>OBJ</td>
+                <td>Cell2</td>
+                <td>Wavefront Geometry File format </td>
+              </tr>
+              <tr>
+                <td>STl</td>
+                <td>Cell2</td>
+                <td>STL format for the surface geometry of 3D objects</td>
+              </tr>
+              <tr>
+                <td>SVG</td>
+                <td>Cell2</td>
+                <td>Scalable Vector Graphics for 2D objects </td>
+              </tr>
+              <tr>
+                <td>X3D</td>
+                <td>Cell2</td>
+                <td>Web3D format for 3D objects</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <hr/>
+
+    <section class="container">
+      <h2>Create complex 3D designs</h2>
+      <details>
+        <summary>Create projects with multiple parts</summary>
+        <p>TBD ... add code and viewer</p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+      <details>
+        <summary>Use STL, Fonts, SVG files inside designs</summary>
+        <p>TBD ... add code and viewer</p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+      <details>
+        <summary>Include other Javascript libraries</summary>
+        <p>Add one of the thousands of available Javascript packages to any design.</p>
+        <p><a href="#" class="secondary" onclick="event.preventDefault()">Try it</a></p>
+      </details>
+    </section>
+
+    <hr/>
+
+    <section class="container">
+      <h2>Do even more with JSCAD</h2>
+      <details>
+        <summary>Embed JSCAD in websites</summary>
+        <p>TBD ... add code and viewer</p>
+      </details>
+      <details>
+        <summary>Use JSCAD in command line tools</summary>
+        <p>TBD ... add code and viewer</p>
+      </details>
+    </section>
+
+    <hr/>
+
+    <section class="container" style="text-align: center;">
+      <div>
+        <img src="logo.svg" style="width: 15%; height: 15%">
+      </div>
+      <h2>Join a community of thousands</h2>
+      <p>Jump online and chat with other designers and developers.</p>
+      <p>Share designs and learn how to do even more.</p>
+      <p class="grid">
+        <button onclick="window.location.href='forum.html';">JSCAD User Forum</button>
+        <button onclick="window.location.href='discord.html';" class="secondary">JSCAD Discord Forum</button>
+      </p>
+    </section>
+
+    <hr/>
+      <a href="easteregg.html" style="color: transparent; text-decoration: none;">
+        Convert OpenSCAD to JSCAD
+      </a>
+    <hr/>
+
+    <footer id="footer" class="container">
+      <div class="grid">
+        <p><strong>About</strong></p>
+        <p><strong>Learn JSCAD</strong></p>
+        <p><strong>Community</strong></p>
+      </div>
+      <div class="grid">
+        <p><a href="https://github.com/jscad/OpenJSCAD.org" class="secondary">GitHub</a></p>
+        <p><a href="guide.html" class="secondary">Quick Start</a></p>
+        <p><a href="forum.html" class="secondary">User Forum</a></p>
+      </div>
+      <div class="grid">
+        <p><a href="https://github.com/jscad/OpenJSCAD.org/blob/master/CODE_OF_CONDUCT.md" class="secondary">Code of Conduct</a></p>
+        <p><a href="guide.html" class="secondary">User Guide</a></p>
+        <p><a href="discord.html" class="secondary">Discord</a></p>
+      </div>
+      <div class="grid">
+        <p><a href="#" class="secondary">Contributors</a></p>
+        <p><a href="reference.html" class="secondary">API Reference</a></p>
+        <p><a href="#" class="secondary">Youtube</a></p>
+      </div>
+    </footer>
+
+    <!-- Modal for pulldowns -->
+    <script src="js/modal.js"></script>
+  </body>
+</html>
